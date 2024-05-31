@@ -1,0 +1,76 @@
+<mxfile host="Electron" modified="2024-05-30T14:04:53.640Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ASRsL5YFUc4SmUo2hMjT" version="23.1.5" type="device">
+  <diagram name="Страница — 1" id="iYhcbxfA8KIQl01i_tmX">
+    <mxGraphModel dx="1195" dy="703" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k91t0obvnbjGaJBzs4cf-2" value="Клиент: Веб-сайт для администратора" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="290" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-4" value="1) Интерфейс для авторизации в роли Admin&lt;br&gt;2) Интерфейс для добавления и редактирования товаров, подкатегорий, категорий, групп" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="k91t0obvnbjGaJBzs4cf-2">
+          <mxGeometry y="23" width="290" height="97" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-5" value="Клиент: Веб-сайт и/или мобильное приложение для пользователей" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="290" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-6" value="1) Интерфейс для просмотра товаров по группам, подкатегориям, категориям&amp;nbsp;&lt;br&gt;2) Интерфейс для авторизации в роли User&lt;br&gt;3) Интерфейс для просмотра забронированных товаров и их статус&lt;br&gt;4) Интерфейс для бронирования товаров&lt;br&gt;5) Интерфейc для регистрации нового пользователя User" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="k91t0obvnbjGaJBzs4cf-5">
+          <mxGeometry y="23" width="290" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-7" value="Сервер: Web API" style="swimlane;whiteSpace=wrap;html=1;startSize=30;" vertex="1" parent="1">
+          <mxGeometry x="260" y="290" width="290" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-8" value="1) Аутентификация пользователей&lt;br&gt;2) Выдача данных о товарах, подкатигориях, категориях, групп&lt;br&gt;3) Бронирование товаров для User&lt;br&gt;4) Добавление и редактирование товаров, подкатегорий, категорий и групп для Admin" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="k91t0obvnbjGaJBzs4cf-7">
+          <mxGeometry y="23" width="290" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-10" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="335" y="500" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-12" value="Реляционная база данных с данными о таварах и пользователях" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="375" y="560" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-13" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-15" value="Внешняя логистическая система" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-19" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-20" value="Внешний облачный сервис для хранения фотографий" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-21" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="480" y="290" as="sourcePoint" />
+            <mxPoint x="580" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-22" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.221;exitY=-0.002;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="k91t0obvnbjGaJBzs4cf-7">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="310" as="sourcePoint" />
+            <mxPoint x="210" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-23" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.055;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="k91t0obvnbjGaJBzs4cf-15" target="k91t0obvnbjGaJBzs4cf-8">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="320" y="380" as="sourcePoint" />
+            <mxPoint x="420" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-24" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.055;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="150" y="409.8" as="sourcePoint" />
+            <mxPoint x="260" y="409.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k91t0obvnbjGaJBzs4cf-25" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="k91t0obvnbjGaJBzs4cf-10" target="k91t0obvnbjGaJBzs4cf-8">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="260" y="460" as="sourcePoint" />
+            <mxPoint x="360" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
